@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Late Night Desk Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Atmospheric dust overlay -->
+    <div id="dust-particles" aria-hidden="true"></div>
+
+    <!-- Ambient Desk Clutter (SVG props) -->
+    <div id="ambient-clutter" class="ambient-clutter" aria-hidden="true">
+        <!-- Coffee Stain -->
+        <div class="prop coffee-stain"></div>
+        <!-- Yellow Pencil -->
+        <div class="prop pencil">
+            <div class="pencil-eraser"></div>
+            <div class="pencil-metal"></div>
+            <div class="pencil-body">
+                <span class="brand">No. 2</span>
+            </div>
+            <div class="pencil-wood">
+                <div class="pencil-lead"></div>
+            </div>
+        </div>
+        <!-- Paperclip 1 -->
+        <div class="prop paperclip clip-1">
+            <svg viewBox="0 0 10 30" width="20" height="60">
+                <path d="M5,25 C7.5,25 9,23.5 9,21 L9,5 C9,2.5 7,1 5,1 C3,1 1,2.5 1,5 L1,23 C1,24.5 2,26 4,26 C6,26 7,24.5 7,23 L7,7" fill="none" stroke="#silver" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <!-- Paperclip 2 -->
+        <div class="prop paperclip clip-2">
+            <svg viewBox="0 0 10 30" width="20" height="60">
+                <path d="M5,25 C7.5,25 9,23.5 9,21 L9,5 C9,2.5 7,1 5,1 C3,1 1,2.5 1,5 L1,23 C1,24.5 2,26 4,26 C6,26 7,24.5 7,23 L7,7" fill="none" stroke="#silver" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- HUD Modules (Timer & Lives) -->
+    <div id="hud-left" class="hud-container hud-hidden">
+        <div class="hud-module timer-display" id="desk-timer">
+            <span class="timer-label">TIME</span>
+            <span class="timer-value" id="time-left">0:20</span>
+        </div>
+        <div class="hud-module score-display" id="desk-score" style="display: none;">
+            <span class="timer-label">SCORE</span>
+            <span class="timer-value" id="current-score">0</span>
+        </div>
+    </div>
+    
+    <div id="hud-right" class="hud-container hud-hidden">
+        <div class="hud-module life-stamps" id="desk-lives">
+            <!-- Hearts will be injected or toggled here -->
+            <div class="life-mark" data-life="1">❤️</div>
+            <div class="life-mark" data-life="2">❤️</div>
+            <div class="life-mark" data-life="3">❤️</div>
+        </div>
+    </div>
+
+    <!-- Setup Modal Overlay -->
+    <div id="setup-modal" class="modal-overlay active">
+        <div class="modal-content">
+            <h1 class="modal-title">LATE NIGHT STUDY</h1>
+            <p class="modal-subtitle">Enter Developer ID to begin.</p>
+            <div class="form-group">
+                <input type="text" id="player-name" class="modal-input" placeholder="e.g. Neo" autocomplete="off" maxlength="15">
+            </div>
+            <button type="button" class="modal-btn" id="start-btn" disabled>BEGIN EXAM</button>
+        </div>
+    </div>
+
+    <main id="desk">
+        <!-- Visual representation of answered cards -->
+        <div id="used-pile" aria-hidden="true"></div>
+        
+        <div id="deck-area">
+            <!-- Background cards to give stack depth -->
+            <div class="fake-cards" id="fake-cards" aria-hidden="true">
+                <div class="fake-card fake-3"></div>
+                <div class="fake-card fake-2"></div>
+                <div class="fake-card fake-1"></div>
+            </div>
+            
+            <!-- Active card container -->
+            <section id="card-slot">
+                <!-- Cards are injected here by JS -->
+            </section>
+        </div>
+        
+        <!-- Live region for accessibility -->
+        <div id="announcer" aria-live="polite" class="sr-only"></div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "topic": "Web History",
+        "type": "single-select",
+        "prompt": "Who is credited with inventing the World Wide Web?",
+        "options": ["Tim Berners-Lee", "Vint Cerf", "Bill Gates", "Marc Andreessen"],
+        "correctAnswer": ["Tim Berners-Lee"]
+    },
+    {
+        "id": 2,
+        "topic": "Web History",
+        "type": "single-select",
+        "prompt": "Which company originally created JavaScript?",
+        "options": ["Microsoft", "Netscape", "Google", "Apple"],
+        "correctAnswer": ["Netscape"]
+    },
+    {
+        "id": 3,
+        "topic": "Web History",
+        "type": "single-select",
+        "prompt": "Which company originally developed the Chrome browser?",
+        "options": ["Google", "Microsoft", "Apple", "Mozilla"],
+        "correctAnswer": ["Google"]
+    },
+    {
+        "id": 4,
+        "topic": "Web History",
+        "type": "fill-in-blank",
+        "prompt": "The first popular graphical web browser, released in 1993, was called NCSA ____.",
+        "correctAnswer": ["Mosaic"]
+    },
+    {
+        "id": 5,
+        "topic": "Web History",
+        "type": "multi-select",
+        "prompt": "Which of these browsers existed before the year 2000? (select all that apply)",
+        "options": ["Internet Explorer", "Chrome", "Netscape Navigator", "Firefox", "Opera"],
+        "correctAnswer": ["Internet Explorer", "Netscape Navigator", "Opera"]
+    },
+    {
+        "id": 6,
+        "topic": "HTML/CSS",
+        "type": "fill-in-blank",
+        "prompt": "CSS stands for Cascading Style ____.",
+        "correctAnswer": ["Sheets"]
+    },
+    {
+        "id": 7,
+        "topic": "HTML/CSS",
+        "type": "multi-select",
+        "prompt": "Which of these are valid HTML5 semantic tags? (select all that apply)",
+        "options": ["<header>", "<div>", "<footer>", "<span>", "<article>", "<table>"],
+        "correctAnswer": ["<header>", "<footer>", "<article>"]
+    },
+    {
+        "id": 8,
+        "topic": "HTML/CSS",
+        "type": "code-snippet",
+        "prompt": "What is wrong with the following CSS?",
+        "code": "h1 {\n  color: #FF0000;\n  font-size: 2em\n  margin-bottom: 10px;\n}",
+        "options": ["Invalid color format", "Missing semicolon after 2em", "margin-bottom should be negative", "There is no error"],
+        "correctAnswer": ["Missing semicolon after 2em"]
+    },
+    {
+        "id": 9,
+        "topic": "HTML/CSS",
+        "type": "single-select",
+        "prompt": "What does 'DOM' stand for?",
+        "options": ["Document Object Model", "Data Object Method", "Digital Output Mode", "Document Order Map"],
+        "correctAnswer": ["Document Object Model"]
+    },
+    {
+        "id": 10,
+        "topic": "HTML/CSS",
+        "type": "code-snippet",
+        "prompt": "How will the browser render this HTML element?",
+        "code": "<button disabled=\"false\">Submit</button>",
+        "options": ["As a normal enabled button", "As a disabled button", "It will throw a syntax error", "It depends on the browser"],
+        "correctAnswer": ["As a disabled button"]
+    },
+    {
+        "id": 11,
+        "topic": "HTML/CSS",
+        "type": "multi-select",
+        "prompt": "Which of the following are valid CSS position values? (select all that apply)",
+        "options": ["static", "relative", "centered", "absolute", "sticky", "fluid"],
+        "correctAnswer": ["static", "relative", "absolute", "sticky"]
+    },
+    {
+        "id": 12,
+        "topic": "JavaScript",
+        "type": "fill-in-blank",
+        "prompt": "The keyword used to declare a block-scoped variable that cannot be reassigned is ____.",
+        "correctAnswer": ["const"]
+    },
+    {
+        "id": 13,
+        "topic": "JavaScript",
+        "type": "multi-select",
+        "prompt": "Which of these are JavaScript frameworks or libraries? (select all that apply)",
+        "options": ["React", "Photoshop", "Vue", "Excel", "Angular"],
+        "correctAnswer": ["React", "Vue", "Angular"]
+    },
+    {
+        "id": 14,
+        "topic": "JavaScript",
+        "type": "code-snippet",
+        "prompt": "What will be printed to the console?",
+        "code": "console.log(typeof null);",
+        "options": ["\"null\"", "\"undefined\"", "\"object\"", "\"boolean\""],
+        "correctAnswer": ["\"object\""]
+    },
+    {
+        "id": 15,
+        "topic": "JavaScript",
+        "type": "code-snippet",
+        "prompt": "What is the output of this code?",
+        "code": "const x = [1, 2, 3];\nx[10] = 99;\nconsole.log(x.length);",
+        "options": ["3", "10", "11", "undefined"],
+        "correctAnswer": ["11"]
+    },
+    {
+        "id": 16,
+        "topic": "JavaScript",
+        "type": "single-select",
+        "prompt": "Which symbol is used for strict equality comparison?",
+        "options": ["=", "==", "===", "!=="],
+        "correctAnswer": ["==="]
+    },
+    {
+        "id": 17,
+        "topic": "JavaScript",
+        "type": "code-snippet",
+        "prompt": "What is the result of the following expression?",
+        "code": "0.1 + 0.2 === 0.3",
+        "options": ["true", "false", "undefined", "TypeError"],
+        "correctAnswer": ["false"]
+    },
+    {
+        "id": 18,
+        "topic": "JavaScript",
+        "type": "fill-in-blank",
+        "prompt": "The method used to convert a JSON string into a JavaScript object is JSON.____().",
+        "correctAnswer": ["parse"]
+    },
+    {
+        "id": 19,
+        "topic": "JavaScript",
+        "type": "single-select",
+        "prompt": "Which of the following methods removes the last element from an array?",
+        "options": ["shift()", "pop()", "slice()", "splice()"],
+        "correctAnswer": ["pop()"]
+    },
+    {
+        "id": 20,
+        "topic": "JavaScript",
+        "type": "multi-select",
+        "prompt": "Which of these are primitive data types in JavaScript? (select all that apply)",
+        "options": ["String", "Object", "Boolean", "Number", "Array"],
+        "correctAnswer": ["String", "Boolean", "Number"]
+    }
+]
